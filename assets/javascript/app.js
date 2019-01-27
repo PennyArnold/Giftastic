@@ -14,23 +14,24 @@ var reactions = ["happy", "frustrated", "mic drop", "success"];
           console.log(response);
           // Creates a div to hold the reaction
        
-          for (var i=0;i<10;i++)
+          for (var i = 0; i < 9; i++)
           {
             var new_Reaction= $("<div>");
             new_Reaction.addClass("newReaction");
 
             var reactionRat= $("<h6>");
 
-            console.log(JSON.stringify(response.data[i].rating));
+        
             reactionRat.text("Rating :" + response.data[i].rating);
         
 
             var reactionImg = $("<img>");
             reactionImg.addClass("imgReaction");
-            console.log(response.data[i].images.fixed_width.url);
+           
             reactionImg.attr("src", response.data[i].images.fixed_width_still.url);
             reactionImg.attr("data-still-url",response.data[i].images.fixed_width_still.url);
             reactionImg.attr("data-animated-url",response.data[i].images.fixed_width.url);
+            reactionImg.attr(".img-thumbnail");
 
             new_Reaction.append(reactionRat);  
             new_Reaction.append(reactionImg);

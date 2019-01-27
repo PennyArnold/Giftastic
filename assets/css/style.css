@@ -1,21 +1,23 @@
+/*sets up the background */
 .big-banner{
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-};
+ };
 
+ /*needed to keep images properly sized*/
 img{
    width: 100%;
    height: 2in;
 };
-
+/*sets images in line so that they don't go down the page one on top of the other*/
 #gifArea {
 	clear: both;
 	display: inline;
-	/* flex-wrap: wrap; */
+	
 }
+/*sets layout for images*/
 .newReaction{
     position: relative;
     width: 25%;
@@ -23,6 +25,7 @@ img{
     margin: 2%;
     color: white;
 }
+/*keeps images from blending together and keeps them the same size*/
 .imgReaction{
     width: 100%;
     height: 2in;
