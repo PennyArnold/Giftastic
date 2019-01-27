@@ -17,12 +17,63 @@
 </head>
 <body>
    
-        <div class="jumbotron big-banner" style="height: 800px;">
+        <div class="jumbotron big-banner">
+                <title class="text-white">Giphy Search</title>
+            </head>
+            <body>
+                <div class = "container">
+                    <div class="jumbtron" id="header">
             
-              
-        
             
+                        <h1 class="text-white">Reaction GIPHYs</h1>         
+                        
+                        <div class="instructions m-0">
+                            <h5 class="text-white">
+                                Do you need a good comeback? Find one here! 
+                                <br>
+                                Click the buttons to display reaction GIPHYs!
+                                <br>
+                                <br>
+                                Click the GIPHYs once to make them move.  Click again to freeze them.
+                                <br>
+                                Search to add more buttons!
+                            </h5>
+                        </div>
+                 
+                    </div>
+                    
+                    <form class="form-inline" id="Search">
+                    
+                        <div class="form-group">
+                            <label for="reactionInput" class="text-white m-2">Search:</label>
+                            <input type="text" id="reactionInput">
+                        </div>
+                        <!-- Button triggers new movie to be added -->
+                        <input class="btn btn-gradient-light border border-dark ml-1" id="addReaction" type="submit" value="Submit">
+            
+                    </form>
+            
+            
+                    <div class="row">
+                        <div class="container">
+                            <div class="btn-group inline pull-left">
+                                <div id="myButtons"></div>
+                            </div> <!--end of button group -->
+                        </div> <!--end of container -->
+                    </div> <!--end of row -->
+                        
+                    <div class="row">
+                        <div class="container">
+                            <span><row id="gifArea"></row></span>
+                        </div> <!--end of container -->
+                    </div> <!-- end of row  -->
+                </div>
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script type="text/javascript" src="assets/javascript/app.js"></script>
+            </body>
+            </html>
         </div> 
-    
+   
 </body>
 </html>
