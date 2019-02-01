@@ -20,7 +20,7 @@ img{
 /*sets layout for images*/
 .newReaction{
     position: relative;
-    width: 25%;
+
     display: inline-block;
     margin: 2%;
     color: white;

@@ -17,7 +17,7 @@ var reactions = ["happy", "frustrated", "mic drop", "success"];
           for (var i = 0; i < 9; i++)
           {
             var new_Reaction= $("<div>");
-            new_Reaction.addClass("newReaction");
+            new_Reaction.addClass("newReaction col-lg-3  col-md-3 col-sm-4 col-xs-12");
 
             var reactionRat= $("<h6>");
 
@@ -31,7 +31,8 @@ var reactions = ["happy", "frustrated", "mic drop", "success"];
             reactionImg.attr("src", response.data[i].images.fixed_width_still.url);
             reactionImg.attr("data-still-url",response.data[i].images.fixed_width_still.url);
             reactionImg.attr("data-animated-url",response.data[i].images.fixed_width.url);
-            reactionImg.attr(".img-thumbnail");
+            
+            
 
             new_Reaction.append(reactionRat);  
             new_Reaction.append(reactionImg);
